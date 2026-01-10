@@ -62,9 +62,16 @@ html {
   font-size: 62.5%;
 }
 
+:root {
+  --text-color: #1a162e;
+  --icon-color: brightness(0) saturate(100%) invert(8%) sepia(29%)
+      saturate(1284%) hue-rotate(210deg) brightness(90%) contrast(96%);
+}
+
 body {
   font-size: 1.6rem;
   font-family: "Gordita", sans-serif;
+  color: var(--text-color);
 }
 
 a {
@@ -76,6 +83,18 @@ button {
   outline: none;
   border: none;
   background-color: transparent;
+}
+
+.icon {
+  filter: var(--icon-color);
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  color: inherit;
 }
 
 .row > *, .container-fluid, .container {
@@ -1162,7 +1181,6 @@ button {
   padding: 13px;
 }
 .top-act__title {
-  color: #1a162e;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.46; /* 146.667% */
