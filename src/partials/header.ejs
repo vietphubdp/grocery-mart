@@ -1,15 +1,25 @@
 <header class="header">
     <div class="container">
         <div class="top-bar">
+            <!-- Menu Mobile Icon -->
+            <button class="top-bar__more">
+                <img
+                    class="icon"
+                    src="./icons/menu.svg"
+                    alt=""
+                    class="top-bar__more-icon"
+                />
+            </button>
+
             <!-- Logo -->
-            <div class="logo">
+            <a href="#!" class="logo">
                 <img
                     src="./icons/logo.svg"
                     alt="Grocery Mart"
                     class="logo__img"
                 />
                 <h1 class="logo__title">grocerymart</h1>
-            </div>
+            </a>
 
             <!-- Navigation -->
             <nav class="navbar">
@@ -20,7 +30,7 @@
                             <img
                                 src="./icons/arrow-down.svg"
                                 alt=""
-                                class="navbar__arrow"
+                                class="icon navbar__arrow"
                             />
                         </a>
                     </li>
@@ -30,7 +40,7 @@
                             <img
                                 src="./icons/arrow-down.svg"
                                 alt=""
-                                class="navbar__arrow"
+                                class="icon navbar__arrow"
                             />
                         </a>
                     </li>
@@ -40,7 +50,7 @@
                             <img
                                 src="./icons/arrow-down.svg"
                                 alt=""
-                                class="navbar__arrow"
+                                class="icon navbar__arrow"
                             />
                         </a>
                     </li>
@@ -49,12 +59,12 @@
 
             <!-- Actions -->
             <div class="top-act">
-                <div class="top-act__group">
-                    <button class="top-act__btn top-act__btn--single">
+                <div class="top-act__group top-act__group--single">
+                    <button class="top-act__btn">
                         <img
                             src="./icons/search.svg"
                             alt=""
-                            class="top-act__img"
+                            class="icon top-act__img"
                         />
                     </button>
                 </div>
@@ -64,7 +74,7 @@
                         <img
                             src="./icons/heart.svg"
                             alt=""
-                            class="top-act__img"
+                            class="icon top-act__img"
                         />
                         <span class="top-act__title">03</span>
                     </button>
@@ -75,7 +85,7 @@
                         <img
                             src="./icons/cart.svg"
                             alt=""
-                            class="top-act__img"
+                            class="icon top-act__img"
                         />
                         <span class="top-act__title">$65.42</span>
                     </button>
