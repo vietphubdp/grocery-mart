@@ -1,0 +1,20 @@
+.drop-down {
+    position: absolute;
+    left: 0;
+    padding-top: 54px;
+
+    &__inner {
+        position: relative;
+        border-radius: 20px;
+        background: var(--dropdown-bg);
+        box-shadow: 0 40px 90px 20px var(--dropdown-shadow);
+        padding: 30px;
+
+        &::before {
+            content: url("../icons/dropdown-arrow.svg");
+            position: absolute;
+            top: -13px;
+            left: 360px;
+        }
+    }
+}

@@ -11,6 +11,7 @@
 
 .top-bar {
     @extend %flexItemCenter;
+    position: relative;
     padding: 30px 0;
 
     @include abstracts.breakpoint(lg) {
@@ -48,6 +49,7 @@
     }
 
     &__link {
+        height: 50px;
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 1.46; /* 146.667% */
