@@ -1133,6 +1133,8 @@ html.dark {
   --sepharate-color: #ededf6;
   --header-bg-mobile: #171c28;
   --body-color: #292e39;
+  --dropdown-bg: #292e39;
+  --dropdown-shadow: rgba(23, 28, 40, 0.4);
 }
 
 html {
@@ -1201,8 +1203,15 @@ html {
     display: none;
   }
 }
-.navbar__list {
-  gap: 30px;
+.navbar__item:first-child a {
+  padding-left: 0;
+}
+.navbar__item:last-child a {
+  padding-right: 0;
+}
+.navbar__item:hover .drop-down {
+  opacity: 1;
+  visibility: visible;
 }
 .navbar__link {
   height: 50px;
@@ -1210,6 +1219,7 @@ html {
   font-weight: 500;
   line-height: 1.46; /* 146.667% */
   gap: 6px;
+  padding: 0 15px;
 }
 
 .top-act {
@@ -1298,19 +1308,16 @@ html {
   position: absolute;
   left: 0;
   padding-top: 54px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s;
 }
 .drop-down__inner {
   position: relative;
   border-radius: 20px;
   background: var(--dropdown-bg);
-  box-shadow: 0 40px 90px 20px var(--dropdown-shadow);
+  box-shadow: 12px 19px 15px -3px var(--dropdown-shadow);
   padding: 30px;
-}
-.drop-down__inner::before {
-  content: url("../icons/dropdown-arrow.svg");
-  position: absolute;
-  top: -13px;
-  left: 360px;
 }
 
 /*# sourceMappingURL=main.css.map */

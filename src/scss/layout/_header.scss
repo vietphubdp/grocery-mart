@@ -45,7 +45,21 @@
 
     &__list {
         @extend %flexItemCenter;
-        gap: 30px;
+    }
+
+    &__item {
+        &:first-child a {
+            padding-left: 0;
+        }
+
+        &:last-child a {
+            padding-right: 0;
+        }
+
+        &:hover .drop-down {
+            opacity: 1;
+            visibility: visible;
+        }
     }
 
     &__link {
@@ -55,6 +69,7 @@
         line-height: 1.46; /* 146.667% */
         @extend %flexItemCenter;
         gap: 6px;
+        padding: 0 15px;
     }
 }
 
